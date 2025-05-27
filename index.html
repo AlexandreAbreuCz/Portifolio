@@ -4,12 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"  crossorigin="anonymous"  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="style.css" />
   <title>Meu portfólio</title>
 </head>
 <body>
     <header class="container text-center">
-        <img src="https://img.a.transfermarkt.technology/portrait/big/8198-1694609670.jpg?lm=1" alt="Avatar Do Alexandre" class="rounded-circle">
+        <img src="https://img.a.transfermarkt.technology/portrait/big/8198-1694609670.jpg?lm=1" alt="Avatar Do Alexandre" class="rounded-circle" width="200px" height="200px">
         <p>Eu sou Alexandre</p>
         <h1>Eu Faço Programação</h1>
         <p>Sou Estudande de programção a mais de 2 longos anos. Sou bom com logica e amo entender como as coisas funcionam, por isso decidi me tornar Programador.</p>
@@ -22,7 +23,89 @@
             <p class="badge text-bg-secondary">Designer Grafico</p>
         </div>
     </header>
+    <main class="container mt-5">
+        <h2 style="text-align: center;">Meus projetos</h2>
+        <div class="row justify-content-around mt-4">
+            <!-- Projeto 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/projeto-1.png" class="card-img-top" alt="Imagem de um projeto de loja de instrumentos virtual">
+                    <div class="card-body">
+                        <h5 class="card-title">Music Brasil: Uma loja de intrumentos fictisia</h5>
+                        <p class="card-text">Desenvolvi oprojeto para aperfeiçoar o HTML, CSS, e o JavaScript. Ele contem
+                          sitemas de registro e login e carrinho de compras.
+                        </p>
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal1">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Projeto 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/projeto-2.png" class="card-img-top" alt="Imagem representativa de um site de quiz de judo online">
+                    <div class="card-body">
+                        <h5 class="card-title">Quiz de vocabulario no judo: Um quiz interativo usado para estudar</h5>
+                        <p class="card-text">Este projeto foi desenvolvido a beneficio de Judocas, em exames de faixa onde e preciso decorar grande quantidade de palavras.</p>
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal2">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
+    <!-- Modal 1 -->
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Music Brasil: Uma loja de intrumentos fictisia</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="img/projeto-1.png" class="img-fluid w-100" alt="Imagem representativa de um site de quiz de judo online">
+                  <p>O projeto foi iniciado com a inteção de entender como funcionava o HTML e o CSS puro e teve um de correr onde
+                    acabei utilizando o JS(JavaScript), para fazer diversos sistemas no site. O projeto e um pouco precario e bem 
+                    iniciante.
+                  </p>
+                </div>
+                <div class="modal-footer">
+                    <a  class="btn btn-dark" href="https://alexandreabreuczr.github.io/MusicBrasil/Principal.html">Ver projeto ao vivo</a>
+                    <a  class="btn btn-dark" href="https://github.com/AlexandreAbreuCzr/MusicBrasil">Ver código do projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 2 -->
+    <div class="modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Quiz de vocabulario no judo: Um quiz interativo usado para estudar</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/projeto-2.png" class="img-fluid w-100"
+                        alt="Imagem representativa de um site de quiz de judo online">
+                  <p>O site foi criado a partir de uma necessidade de estudo para uma parte do exame de faixa (exame de graduação) no judô. Era preciso decorar mais de 100 palavras em japonês e suas respectivas traduções. Assim, imaginei um site onde fosse possível dividir essas palavras em grupos, para tornar o aprendizado mais fácil e eficiente.
+                  </p>
+                </div>
+                <div class="modal-footer">
+                    <a  class="btn btn-dark" href="https://alexandreabreuczr.github.io/Quiz-do-Vocabulario---Judo-Candoi/">Ver projeto ao vivo</a>
+                    <a  class="btn btn-dark" href="https://github.com/AlexandreAbreuCzr/Quiz-do-Vocabulario---Judo-Candoi">Ver código do projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container py-5 text-center">
+        <h2>Entre em contato</h2>
+        <div>
+            <i class="bi bi-github"></i>
+            <a href="https://github.com/femascheti">GitHub</a>
+        </div>
+        <p class="my-5 text-center">© Copyright 2024. Produzido por Alexandre Czarnieski.</p>
+    </footer>
     
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
